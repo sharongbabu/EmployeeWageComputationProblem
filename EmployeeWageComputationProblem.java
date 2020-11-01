@@ -128,4 +128,32 @@ break;
 
 
 
+// Month wage
+import java.util.Scanner;
+public class MonthWage{
+public static void main(String args[]){
+Scanner days= new Scanner(System.in);
+System.out.println("enter  number of working days he or she present");
+int working_days = days.nextInt();
+int WagePerHr=20;
+int FullDayHr=10;
+int salary;
+int Totalworking_days=20;
+
+if (working_days >= 20 )
+{
+salary=  WagePerHr *  FullDayHr * working_days;
+System.out.println(salary);
+}
+else
+{
+
+System.out.println("Employee is doesnot complete 20 days");
+}
+}
+}
+
+
+
+
 
