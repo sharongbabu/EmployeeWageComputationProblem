@@ -1,6 +1,7 @@
 Welcome to Employee Wage Computation Program
 
 
+//Employee present
 
 import java.util.*;
 import java.util.Random;
@@ -19,6 +20,8 @@ System.out.println("Employee is absent");
 }
 }
 }
+
+
 
 
 
@@ -83,8 +86,43 @@ System.out.println("Employee is parttime employee");
 }
 
 
+//case statement
 
 
+
+import java.util.*;
+import java.util.Random;
+public class CaseStatament{
+public static void main(String args[]){
+int min =0;
+int max=1;
+int random_int = (int)(Math.random() * (max - min + 1) + min);
+System.out.println(random_int);
+
+int random_int1='0';
+switch(random_int1){
+  case '1':
+    System.out.println("Employee is fulltime employee");
+    int WagePerHr=20;
+     int FullDayHr=10;
+     int salary;
+     salary=  WagePerHr *  FullDayHr;
+     System.out.println(salary);
+break;
+ case '0':
+  System.out.println("Employee is   in parttime job");
+  int PerHr=20;
+  int PartDayHr=8;
+  int salary1;
+  salary1=  PerHr *  PartDayHr;
+  System.out.println(salary1);
+break;
+
+ default:
+
+}
+}
+}
 
 
 
