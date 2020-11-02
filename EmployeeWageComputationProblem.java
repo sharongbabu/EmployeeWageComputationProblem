@@ -245,3 +245,112 @@ newCompany.Salary1(4,10,15);
 }
 
 
+
+
+
+
+
+
+public class Companies{
+
+public void employeeWage( int wagePerHr){
+System.out.println("Full day wage:" +wagePerHr);
+}
+public void hours( int workingHour){
+System.out.println(" Full day workingHour:" +workingHour);
+}
+public void days( int workingDays){
+System.out.println(" Full day workingdays:" +workingDays);
+}
+public void partTimeHours( int workingHours){
+System.out.println(" Partime hour:" +workingHours);
+}
+public void partTimeWage( int workingWage){
+System.out.println(" Parttime wage:" +workingWage);
+}
+public void partTimeDays( int workingDay){
+System.out.println("Parttime working days:" +workingDay);
+}
+}
+class Intel extends Companies{
+public void Salary(int workingHour, int wagePerHr,int workingDays){
+ int salary= wagePerHr * workingHour * workingDays;
+System.out.println("The salary of full day employee in intel:" +salary);
+}
+public void Salary1(int workingHours, int workingWage,int workingDay){
+ int salaryPartTime= workingWage * workingHours * workingDay;
+System.out.println("The salary of parttime employee in intel:" +salaryPartTime);
+}
+}
+class Wipro extends Companies{
+public void Salary(int workingHour, int wagePerHr,int workingDays){
+ int salary= wagePerHr * workingHour * workingDays;
+System.out.println("The salary of full day employee in Wipro:" +salary);
+}
+public void Salary1(int workingHours, int workingWage,int workingDay){
+ int salaryPartTime= workingWage * workingHours * workingDay;
+System.out.println("The salary of parttime employee in Wipro:" +salaryPartTime);
+}
+}
+class Tcs extends Companies{
+public void Salary(int workingHour, int wagePerHr,int workingDays){
+ int salary= wagePerHr * workingHour * workingDays;
+System.out.println("The salary of full day employee Tcs:" +salary);
+}
+public void Salary1(int workingHours, int workingWage,int workingDay){
+ int salaryPartTime= workingWage * workingHours * workingDay;
+System.out.println("The salary of parttime employee Tcs:" +salaryPartTime);
+
+}
+}
+class Main{
+public static void main(String[] args){
+Company newCompany = new Company();
+newCompany.hours(8);
+newCompany.employeeWage(20);
+newCompany.days(20);
+newCompany.partTimeHours(4);
+newCompany.partTimeWage(10);
+newCompany.partTimeDays(15);
+
+newCompany.Salary(8,20,20);
+newCompany.Salary1(4,10,15);
+
+Company newCompany1 = new Company();
+newCompany1.hours(10);
+newCompany1.employeeWage(25);
+newCompany1.days(22);
+newCompany1.partTimeHours(8);
+newCompany1.partTimeWage(18);
+newCompany1.partTimeDays(16);
+
+newCompany1.Salary(10,25,22);
+newCompany1.Salary1(8,18,16);
+
+Company newCompany2 = new Company();
+newCompany2.hours(15);
+newCompany2.employeeWage(30);
+newCompany2.days(25);
+newCompany2.partTimeHours(7);
+newCompany2.partTimeWage(14);
+newCompany2.partTimeDays(12);
+
+newCompany2.Salary(15,30,25);
+newCompany2.Salary1(7,14,12);
+
+
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
