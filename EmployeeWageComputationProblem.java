@@ -194,3 +194,54 @@ System.out.println("Employee is doesnot complete 20 days and 100 hours");
 
 
 
+// refactor the code 
+
+public class Company{
+
+public void employeeWage( int wagePerHr){
+System.out.println("Full day wage:" +wagePerHr);
+}
+public void hours( int workingHour){
+System.out.println(" Full day workingHour:" +workingHour);
+}
+public void days( int workingDays){
+System.out.println(" Full day workingdays:" +workingDays);
+}
+public void partTimeHours( int workingHours){
+System.out.println(" Partime hour:" +workingHours);
+}
+public void partTimeWage( int workingWage){
+System.out.println(" Parttime wage:" +workingWage);
+}
+public void partTimeDays( int workingDay){
+System.out.println("Parttime working days:" +workingDay);
+}
+
+
+public void Salary(int workingHour, int wagePerHr,int workingDays){
+ int salary= wagePerHr * workingHour * workingDays;
+System.out.println("The salary of full day employee:" +salary);
+}
+public void Salary1(int workingHours, int workingWage,int workingDay){
+ int salaryPartTime= workingWage * workingHours * workingDay;
+System.out.println("The salary of parttime employee:" +salaryPartTime);
+}
+
+
+public static void main(String[] args){
+Company newCompany = new Company();
+newCompany.hours(8);
+newCompany.employeeWage(20);
+newCompany.days(20);
+newCompany.partTimeHours(4);
+newCompany.partTimeWage(10);
+newCompany.partTimeDays(15);
+
+newCompany.Salary(8,20,20);
+newCompany.Salary1(4,10,15);
+
+
+}
+}
+
+
